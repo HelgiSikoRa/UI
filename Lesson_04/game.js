@@ -11,8 +11,8 @@ function generateRandomInteger(min, max) {
 let startGame = confirm('Do you want to play a game?');
 if (startGame) {
     while (attemptsNumbers > 0) {
-        randomNumber = generateRandomInteger(lowerBound, max);
-        inputNumber = prompt(`Tape number from ${lowerBound} to ${max}. Attempts remain: ${attemptsNumbers}`);
+        randomNumber = generateRandomInteger(lowerBound, upperBound);
+        inputNumber = prompt(`Tape number from ${lowerBound} to ${upperBound}. Attempts remain: ${attemptsNumbers}`);
         if (inputNumber == randomNumber) {
             alert(`Congratulations! You are winner! Random number is: ${randomNumber}`);
             break;
